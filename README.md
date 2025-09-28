@@ -13,7 +13,7 @@
 
 ## Figma
 
-[Mock Trial Figma Design File]([https://www.figma.com/](https://www.figma.com/design/fGmpfiiGvSQvV9xvVA08ID/Spring--25--Mock-Trial?node-id=20-4))
+[Mock Trial Figma Design File](https://www.figma.com/design/fGmpfiiGvSQvV9xvVA08ID/Spring--25--Mock-Trial?node-id=20-4)
 
 ## Node.js
 
