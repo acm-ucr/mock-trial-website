@@ -15,21 +15,21 @@ const Footer = () => {
           {/* right side */}
           <div className="ml-auto flex gap-7 pr-25">
             <Link
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/ucrmocktrial"
               aria-label="Instagram"
               className="hover:text-mocktrial-yellow"
             >
               <FaInstagram className="inline-block h-8 w-8" />
             </Link>
             <Link
-              href="mailto:mocktrial@ucr.edu"
+              href="mailto:mocktrialucr@gmail.com"
               aria-label="Email"
               className="hover:text-mocktrial-yellow"
             >
               <FaEnvelope className="inline-block h-8 w-8" />
             </Link>
             <Link
-              href="https://www.ucr.edu"
+              href="https://linktr.ee/ucrmocktrial?fbclid=PAZXh0bgNhZW0CMTEAAae4LOAPDYatdDZdzOftG7SkkTRiC2YH41vIJB8O6YoK_1ieIevAETvgGIZcsw_aem_7E2TjaORacH8vCJ3rwlmeQ"
               aria-label="UCR Website"
               className="hover:text-mocktrial-yellow"
             >
