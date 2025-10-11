@@ -8,7 +8,7 @@ import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const pathName = usePathname();
-  
+
   return (
     <div className="from-mocktrial-darkblue to-mocktrial-blue font-mocktrial-montserrat relative flex bg-gradient-to-t p-5">
       <div className="ml-10">
@@ -25,10 +25,10 @@ const Navbar = () => {
               target="_blank"
               className={
                 name === "Connect"
-                ? "bg-mocktrial-yellow rounded-2xl px-5 py-2 text-white"
-                : pathName === link
-                ? "text-mocktrial-yellow"
-                : "text-white"
+                  ? "bg-mocktrial-yellow rounded-2xl px-5 py-2 text-white"
+                  : pathName === link
+                    ? "text-mocktrial-yellow"
+                    : "text-white"
               }
             >
               {name}
