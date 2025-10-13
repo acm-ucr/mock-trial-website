@@ -1,4 +1,5 @@
 import "./globals.css";
+import Footer from "@/components/Footer";
 import { Montserrat } from "next/font/google";
 import { ReactQueryClientProvider } from "@/utils/react-query";
 import Navbar from "@/components/NavBar";
@@ -26,6 +27,7 @@ export default function RootLayout({ children }: LayoutProps) {
       <body className={montserrat.className}>
         <Navbar />
         <ReactQueryClientProvider>{children}</ReactQueryClientProvider>
+        <Footer />
       </body>
     </html>
   );
