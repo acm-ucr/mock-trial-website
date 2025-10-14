@@ -1,5 +1,7 @@
+import Header from "@/components/Header";
+
 const Achievements = () => {
-  return <div className="">Achievements</div>;
+  return <Header title="Achievements" />;
 };
 
 export default Achievements;
