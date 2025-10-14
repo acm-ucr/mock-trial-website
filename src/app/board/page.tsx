@@ -1,5 +1,7 @@
+import Header from "@/components/Header";
+
 const Board = () => {
-  return <div className="">Board</div>;
+  return <Header title="Board" />;
 };
 
 export default Board;

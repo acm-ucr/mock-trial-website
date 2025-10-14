@@ -5,10 +5,6 @@ export interface navigation {
 
 const navigations: navigation[] = [
   {
-    name: "About",
-    link: "/about",
-  },
-  {
     name: "Board",
     link: "/board",
   },
