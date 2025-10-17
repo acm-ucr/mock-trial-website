@@ -1,4 +1,3 @@
-import React from "react";
 import RightAch from "@/components/RightAch";
 import Image from "@/public/test-image.jpg";
 
