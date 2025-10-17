@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function RightAch({
   image,
   text,
@@ -7,20 +5,23 @@ export default function RightAch({
   image: string;
   text: string;
 }) {
+  // hidden md:block
   return (
-    <section className="grid h-100 grid-cols-1 md:grid-cols-2">
-      <div className="flex items-center justify-center bg-blue-700 text-white">
-        <h2 className="px-6 text-center text-4xl leading-tight font-semibold tracking-wide">
-          {text}
-        </h2>
-      </div>
+    <section className="hidden md:block">
+      <div className="grid h-130 grid-cols-1 md:grid-cols-2">
+        <div className="bg-mocktrial-blue flex items-center justify-center text-white">
+          <h2 className="px-6 text-center text-4xl leading-tight font-semibold tracking-wide">
+            {text}
+          </h2>
+        </div>
 
-      <div className="relative">
-        <img
-          src={image}
-          alt=""
-          className="absolute inset-0 h-full w-full object-cover"
-        />
+        <div className="relative">
+          <img
+            src={image}
+            alt="Achievement Image"
+            className="absolute inset-0 h-full w-full object-cover"
+          />
+        </div>
       </div>
     </section>
   );
