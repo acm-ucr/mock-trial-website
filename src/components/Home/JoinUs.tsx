@@ -2,8 +2,8 @@ export default function JoinUsComponent() {
   return (
     <>
       <div
-        className="bg-mocktrial-lightblue font-mocktrial-montserrat flex min-h-screen flex-col"
-        
+        className="font-mocktrial-montserrat flex min-h-screen flex-col"
+        style={{ backgroundColor: "mocktrial-seablue" }}
       >
         <div className="mt-8 flex flex-1 items-center justify-center px-4 py-8 sm:mt-12 sm:px-6 md:-mt-70 md:px-8">
           <div className="w-full max-w-2xl">
