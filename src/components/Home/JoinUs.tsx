@@ -1,4 +1,4 @@
-export default function MockTrialLayout() {
+export default function JoinUsComponent() {
   return (
     <>
       <div
