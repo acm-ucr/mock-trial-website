@@ -1,13 +1,5 @@
-import LeftAchievements from "@/components/achievements/leftAchievements";
-
 const Achievements = () => {
-  return (
-    <div className="">
-      <LeftAchievements />
-
-      <div>Achievements</div>
-    </div>
-  );
+  return <div className="">Achievements</div>;
 };
 
 export default Achievements;
