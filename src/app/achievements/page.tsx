@@ -1,6 +1,6 @@
 import React from "react";
 import RightAch from "@/components/RightAch";
-import Image from "@/public/test-image.jpg";
+import Image from "@/public/test-image.webp";
 
 const Achievements = () => {
   return (
