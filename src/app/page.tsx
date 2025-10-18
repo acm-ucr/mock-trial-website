@@ -1,10 +1,9 @@
 import AboutUs from "@/components/Home/AboutUs";
 
 const Home = () => {
-  return(
-
+  return (
     <div>
-        <AboutUs />
+      <AboutUs />
     </div>
   );
 };
