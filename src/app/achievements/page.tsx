@@ -1,12 +1,11 @@
-import RightAch from "@/components/RightAch";
-import Image from "@/public/test-image.jpg";
+import RightAch from "./RightAch";
+// import Image from "@/public/test-image.jpg";
 
 const Achievements = () => {
   return (
-    <>
-      {/* Example usage of RightAch component */}
-      <RightAch image={Image.src} text="Test Achievement" />
-    </>
+    <div>
+      <RightAch />
+    </div>
   );
 };
 
