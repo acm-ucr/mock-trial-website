@@ -1,5 +1,5 @@
 import RightAch from "./RightAch";
-// import Image from "@/public/test-image.jpg";
+// import Image from "@/public/test-image.webp";
 
 const Achievements = () => {
   return (
