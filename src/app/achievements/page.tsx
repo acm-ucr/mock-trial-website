@@ -1,5 +1,4 @@
-import RightAch from "./RightAch";
-// import Image from "@/public/test-image.jpg";
+import RightAch from "../../components/achievements/RightAch";
 
 const Achievements = () => {
   return (

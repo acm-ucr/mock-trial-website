@@ -1,5 +1,5 @@
-import RightAchCard from "@/components/RightAchCard";
-import Image from "@/public/test-image.jpg";
+import RightAchCard from "@/components/achievements/RightAchCard";
+import Image from "@/public/achievements/testImage.webp";
 
 const RightAch = () => {
   return (
