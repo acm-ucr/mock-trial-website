@@ -11,11 +11,11 @@ interface LeftAchievementsProps {
 const LeftAchievements = ({ image, text, size }: LeftAchievementsProps) => {
   return (
     <div className="bg-mocktrial-blue flex h-full w-full flex-row text-white">
-      <div className="relative w-2/3">
-        <Image src={image} alt={text} className="object-cover" />
+      <div className="relative w-1/2">
+        <Image src={image} alt={text} className="object-cover object-center" />
       </div>
 
-      <div className="flex w-2/3 items-center justify-center text-center">
+      <div className="flex w-1/2 items-center justify-center text-center">
         <div style={{ fontSize: `${size}px` }} className="font-semibold">
           {text}
         </div>
