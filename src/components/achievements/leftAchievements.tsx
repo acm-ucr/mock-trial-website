@@ -5,7 +5,7 @@ import Image, { StaticImageData } from "next/image";
 interface LeftAchievementsProps {
   image: StaticImageData;
   text: string;
-  size: string;
+  size: number;
 }
 
 const LeftAchievements = ({ image, text, size }: LeftAchievementsProps) => {
@@ -16,7 +16,9 @@ const LeftAchievements = ({ image, text, size }: LeftAchievementsProps) => {
       </div>
 
       <div className="flex w-2/3 items-center justify-center text-center">
-        <div className={`${size} font-semibold`}>{text}</div>
+        <div style={{ fontSize: `${size}px` }} className="font-semibold">
+          {text}
+        </div>
       </div>
     </div>
   );
