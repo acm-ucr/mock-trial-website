@@ -1,12 +1,11 @@
-import LeftAchievements from "@/components/achievements/leftAchievements";
-import TestImage from "@/public/test.webp";
+import LeftAch from "@/components/achievements/LeftAch";
+import RightAch from "@/components/achievements/RightAch";
 
 const Achievements = () => {
   return (
     <div className="">
-      <LeftAchievements image={TestImage} text="Test Example" size={50} />
-
-      <div>Achievements</div>
+      <LeftAch />
+      <RightAch />
     </div>
   );
 };

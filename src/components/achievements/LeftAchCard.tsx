@@ -5,7 +5,7 @@ import Image, { StaticImageData } from "next/image";
 interface LeftAchievementsProps {
   image: StaticImageData;
   text: string;
-  size: number;
+  size: string;
 }
 
 const LeftAchievements = ({ image, text, size }: LeftAchievementsProps) => {
