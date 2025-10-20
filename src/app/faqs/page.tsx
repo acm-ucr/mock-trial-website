@@ -1,11 +1,11 @@
+import Header from "@/components/Header";
 import WhatIsMock from "@/components/faqs/WhatIsMock";
 const FAQS = () => {
   return (
-    <div>
-      <p>FAQS</p>
-      <div className="flex h-screen w-screen items-center justify-center">
-        <WhatIsMock />
-      </div>
+    <div className="bg-mocktrial-lightblue">
+      <Header title="Frequently Asked Questions" />
+
+      <WhatIsMock />
     </div>
   );
 };
