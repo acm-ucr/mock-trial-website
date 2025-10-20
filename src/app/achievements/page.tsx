@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import LeftAch from "@/components/achievements/LeftAch";
 import RightAch from "@/components/achievements/RightAch";
 
 const Achievements = () => {
@@ -6,6 +7,7 @@ const Achievements = () => {
     <>
       <Header title="Achievements" />
       <div>
+        <LeftAch />
         <RightAch />
       </div>
     </>
