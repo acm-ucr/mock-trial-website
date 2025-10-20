@@ -1,8 +1,10 @@
-import RightAch from "../../components/achievements/RightAch";
+import LeftAch from "@/components/achievements/LeftAch";
+import RightAch from "@/components/achievements/RightAch";
 
 const Achievements = () => {
   return (
-    <div>
+    <div className="">
+      <LeftAch />
       <RightAch />
     </div>
   );
