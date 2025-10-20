@@ -4,13 +4,11 @@ import RightAch from "@/components/achievements/RightAch";
 
 const Achievements = () => {
   return (
-    <>
+    <div className="bg-mocktrial-lightblue">
       <Header title="Achievements" />
-      <div>
-        <LeftAch />
-        <RightAch />
-      </div>
-    </>
+      <LeftAch />
+      <RightAch />
+    </div>
   );
 };
 
