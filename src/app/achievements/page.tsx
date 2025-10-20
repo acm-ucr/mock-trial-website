@@ -1,5 +1,11 @@
+import RightAch from "../../components/achievements/RightAch";
+
 const Achievements = () => {
-  return <div className="">Achievements</div>;
+  return (
+    <div>
+      <RightAch />
+    </div>
+  );
 };
 
 export default Achievements;
