@@ -1,0 +1,27 @@
+"use client";
+
+import Image, { StaticImageData } from "next/image";
+
+interface LeftAchievementsProps {
+  image: StaticImageData;
+  text: string;
+  size: string;
+}
+
+const LeftAchievements = ({ image, text, size }: LeftAchievementsProps) => {
+  return (
+    <div className="bg-mocktrial-blue flex h-full w-full flex-row text-white">
+      <div className="relative w-1/2">
+        <Image src={image} alt={text} className="object-cover object-center" />
+      </div>
+
+      <div className="flex w-1/2 items-center justify-center text-center">
+        <div style={{ fontSize: `${size}px` }} className="font-semibold">
+          {text}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default LeftAchievements;
