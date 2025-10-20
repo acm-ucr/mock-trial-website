@@ -1,5 +1,7 @@
+import Header from "@/components/Header";
+
 const FAQS = () => {
-  return <div className="">FAQS</div>;
+  return <Header title="FAQS" />;
 };
 
 export default FAQS;
