@@ -6,16 +6,16 @@ const BoardThirdRow = () => {
   return (
     <div className="text-mocktrial-darkblue flex flex-col items-center justify-center gap-20 p-30 text-center md:flex-row">
       <div className="flex flex-col">
-        <div className="from-mocktrial-yellow mb-6 h-88 w-88 rounded-4xl bg-gradient-to-b to-amber-100" />
-        <p className="flex flex-row gap-6 text-4xl font-bold">
+        <div className="mb-6 h-90 w-88 rounded-4xl bg-gradient-to-b from-[#e3b858] to-[#e9ce93]" />
+        <p className="flex flex-row justify-center text-2xl font-bold md:text-4xl">
           Abinaya Hariharan
         </p>
-        <p className="flex flex-row justify-center gap-26 text-2xl font-semibold">
+        <p className="flex flex-row justify-center text-lg font-semibold md:text-2xl">
           Co-Fundraising Chair
         </p>
       </div>
 
-      <div className="absolute mr-112 mb-87 w-114">
+      <div className="absolute mb-214 w-114 md:mr-112 md:mb-86">
         <Image
           src={AbinayaHariharan}
           alt="Abinaya Hariharan"
@@ -24,19 +24,19 @@ const BoardThirdRow = () => {
       </div>
 
       <div className="flex flex-col">
-        <div className="from-mocktrial-yellow mb-6 h-88 w-88 rounded-4xl bg-gradient-to-b to-amber-100" />
-        <p className="flex flex-row gap-6 text-4xl font-bold">
+        <div className="mb-6 h-90 w-88 rounded-4xl bg-gradient-to-b from-[#e3b858] to-[#e9ce93]" />
+        <p className="flex flex-row justify-center text-2xl font-bold whitespace-nowrap md:text-4xl">
           Sri Vidya Charepalli
         </p>
-        <p className="flex flex-row justify-center gap-26 text-2xl font-semibold">
+        <p className="flex flex-row justify-center text-lg font-semibold md:text-2xl">
           Co-Fundraising Chair
         </p>
       </div>
-      <div className="absolute mb-42 ml-102 w-82">
+      <div className="absolute mt-94 w-82 md:mt-0 md:mb-40 md:ml-102">
         <Image
           src={SriVidyaCharepalli}
           alt="Sri Vidya Charepalli"
-          className="h-full w-full rounded-3xl object-cover"
+          className="h-full w-full rounded-2xl object-cover"
         />
       </div>
     </div>
