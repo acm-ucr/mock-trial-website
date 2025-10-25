@@ -5,7 +5,7 @@ import pascaleProfilePicture from "@/public/board/pascale_gibbs.webp";
 const BoardSecondRow = () => {
   return (
     <div className="text-mocktrial-darkblue flex flex-col justify-center gap-20 py-40 text-center md:flex-row">
-      <div className="">
+      <div>
         <div className="relative h-100 w-100">
           <div className="absolute inset-0 rounded-3xl bg-linear-to-t from-[#E7C67E] to-[#E1AF42]"></div>
           <div className="absolute -top-40">
@@ -20,7 +20,7 @@ const BoardSecondRow = () => {
         <p className="text-2xl">Co-Coordinator</p>
       </div>
 
-      <div className="">
+      <div>
         <div className="relative h-100 w-100">
           <div className="absolute inset-0 rounded-3xl bg-linear-to-t from-[#E7C67E] to-[#E1AF42]"></div>
           <div className="absolute -top-40">
