@@ -2,26 +2,35 @@
 
 import Image, { StaticImageData } from "next/image";
 
-interface LeftAchievementsProps {
+interface Properties {
   image: StaticImageData;
   text: string;
   size: string;
 }
 
-const LeftAchievements = ({ image, text, size }: LeftAchievementsProps) => {
+const LeftAchCard = ({ image, text, size }: Properties) => {
   return (
-    <div className="bg-mocktrial-blue flex h-full w-full flex-row text-white">
-      <div className="relative w-1/2">
-        <Image src={image} alt={text} className="object-cover object-center" />
-      </div>
+    <div className="hidden md:block">
+      <div className="grid h-[65vh] grid-cols-2">
+        <div className="relative">
+          <Image
+            src={image}
+            alt="Achievement Image"
+            fill
+            className="object-cover"
+          />
+        </div>
 
-      <div className="flex w-1/2 items-center justify-center text-center">
-        <div style={{ fontSize: `${size}px` }} className="font-semibold">
-          {text}
+        <div className="bg-mocktrial-blue flex items-center justify-center text-white">
+          <p
+            className={`${size} px-6 text-center leading-tight font-semibold tracking-wide`}
+          >
+            {text}
+          </p>
         </div>
       </div>
     </div>
   );
 };
 
-export default LeftAchievements;
+export default LeftAchCard;

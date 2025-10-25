@@ -1,13 +1,11 @@
 import Header from "@/components/Header";
-import LeftAch from "@/components/achievements/LeftAch";
-import RightAch from "@/components/achievements/RightAch";
+import AchievementsGrid from "@/components/achievements/AchievementsGrid";
 
 const Achievements = () => {
   return (
     <div className="bg-mocktrial-lightblue">
       <Header title="Achievements" />
-      <LeftAch />
-      <RightAch />
+      <AchievementsGrid />
     </div>
   );
 };
