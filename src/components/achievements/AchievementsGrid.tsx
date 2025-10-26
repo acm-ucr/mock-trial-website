@@ -1,5 +1,5 @@
-import LeftAchCard from "./LeftAchCard";
-import RightAchCard from "./RightAchCard";
+import LeftAchCard from "@/components/achievements/LeftAchCard";
+import RightAchCard from "@/components/achievements/RightAchCard";
 import AchievementsData from "@/data/AchievementsData";
 
 const AchievementsGrid = () => {

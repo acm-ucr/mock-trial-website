@@ -1,38 +1,38 @@
-import Image1 from "@/public/achievements/1.webp";
-import Image2 from "@/public/achievements/2.webp";
-import Image3 from "@/public/achievements/3.webp";
-import Image4 from "@/public/achievements/4.webp";
-import Image5 from "@/public/achievements/5.webp";
-import Image6 from "@/public/achievements/6.webp";
+import spamta_winner from "@/public/achievements/spamta_winner.webp";
+import indivisual_awards from "@/public/achievements/indivisual_awards.webp";
+import team_finishes from "@/public/achievements/team_finishes.webp";
+import regional_spamta_winners from "@/public/achievements/regional_spamta_winners.webp";
+import champion_series from "@/public/achievements/champion_series.webp";
+import ranked_top_25 from "@/public/achievements/ranked_top_25.webp";
 
 const achievementsData = [
   {
-    image: Image1,
+    image: spamta_winner,
     text: "2024-2025 Spamta Winner",
     size: "text-5xl",
   },
   {
-    image: Image2,
+    image: indivisual_awards,
     text: "19 Individual Awards",
     size: "text-5xl",
   },
   {
-    image: Image3,
+    image: team_finishes,
     text: "6 Top 5 Team Finishes",
     size: "text-5xl",
   },
   {
-    image: Image4,
+    image: regional_spamta_winners,
     text: "Regional Spamta Winner",
     size: "text-5xl",
   },
   {
-    image: Image5,
+    image: champion_series,
     text: "First Bid to the opening round championship series in 7 years",
     size: "text-4xl",
   },
   {
-    image: Image6,
+    image: ranked_top_25,
     text: "Rank within top 25% of team in the country",
     size: "text-4xl",
   },
