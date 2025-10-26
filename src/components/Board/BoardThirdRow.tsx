@@ -15,7 +15,7 @@ const BoardThirdRow = () => {
         </p>
       </div>
 
-      <div className="absolute mb-214 w-114 md:mr-112 md:mb-86">
+      <div className="absolute w-114 -translate-y-107 md:-translate-x-57 md:-translate-y-43">
         <Image
           src={AbinayaHariharan}
           alt="Abinaya Hariharan"
@@ -32,7 +32,7 @@ const BoardThirdRow = () => {
           Co-Fundraising Chair
         </p>
       </div>
-      <div className="absolute mt-94 w-82 md:mt-0 md:mb-40 md:ml-102">
+      <div className="absolute mr-5 w-82 translate-y-47 md:translate-x-50 md:-translate-y-20">
         <Image
           src={SriVidyaCharepalli}
           alt="Sri Vidya Charepalli"
