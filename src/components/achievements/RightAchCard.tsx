@@ -1,3 +1,4 @@
+"use client";
 import Image, { StaticImageData } from "next/image";
 
 type Properties = {
@@ -9,7 +10,7 @@ type Properties = {
 const RightAchCard = ({ image, text, size }: Properties) => {
   return (
     <div className="hidden md:block">
-      <div className="grid h-[50vh] grid-cols-2">
+      <div className="grid h-[65vh] grid-cols-2">
         <div className="bg-mocktrial-blue flex items-center justify-center text-white">
           <p
             className={`${size} px-6 text-center leading-tight font-semibold tracking-wide`}
