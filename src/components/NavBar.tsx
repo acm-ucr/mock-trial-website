@@ -5,11 +5,11 @@ import Image from "next/image";
 import mockLogo from "@/public/smallLogo.webp";
 import navigations from "@/data/NavBarLinks";
 import { usePathname } from "next/navigation";
-import homeIcon from "@/public/homeIcon.webp";
-import boardIcon from "@/public/boardIcon.webp";
-import trophyIcon from "@/public/trophyIcon.webp";
-import faqsIcon from "@/public/faqsIcon.webp";
-import connectIcon from "@/public/connectIcon.webp";
+import { LiaHomeSolid } from "react-icons/lia";
+import { AiOutlineTeam } from "react-icons/ai";
+import { LuTrophy } from "react-icons/lu";
+import { FaRegQuestionCircle } from "react-icons/fa";
+import { BiLinkAlt } from "react-icons/bi";
 
 const Navbar = () => {
   const pathName = usePathname();
@@ -48,27 +48,23 @@ const Navbar = () => {
 
       <div className="text-mocktrial-blue border-mocktrial-blue fixed bottom-4 left-1/2 z-50 flex w-9/10 -translate-x-1/2 justify-around rounded-full border-4 bg-[#CEE0FF] py-3 md:hidden">
         <Link href="/" className="flex flex-col items-center">
-          <Image src={homeIcon} alt="Home Icon" width={32} height={32} />
+          <LiaHomeSolid size={20} />
           <div className="mt-1 text-xs font-semibold">HOME</div>
         </Link>
 
         <Link href="/board" className="flex flex-col items-center">
-          <Image src={boardIcon} alt="Board Icon" width={32} height={32} />
+          <AiOutlineTeam size={20} />
+
           <div className="mt-1 text-xs font-semibold">BOARD</div>
         </Link>
 
         <Link href="/achievements" className="flex flex-col items-center">
-          <Image
-            src={trophyIcon}
-            alt="Achievements Icon"
-            width={32}
-            height={32}
-          />
+          <LuTrophy size={20} />
           <div className="mt-1 text-xs font-semibold">ACHIEVEMENTS</div>
         </Link>
 
         <Link href="/faqs" className="flex flex-col items-center">
-          <Image src={faqsIcon} alt="FAQ Icon" width={32} height={32} />
+          <FaRegQuestionCircle size={20} />
           <div className="mt-1 text-xs font-semibold">FAQs</div>
         </Link>
 
@@ -77,7 +73,7 @@ const Navbar = () => {
           target="_blank"
           className="flex flex-col items-center"
         >
-          <Image src={connectIcon} alt="Connect Icon" width={32} height={32} />
+          <BiLinkAlt size={20} />
           <div className="mt-1 text-xs font-semibold">CONNECT</div>
         </Link>
       </div>
