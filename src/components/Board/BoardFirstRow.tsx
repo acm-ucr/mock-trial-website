@@ -16,8 +16,8 @@ const BoardFirstRow = () => {
             />
           </div>
         </div>
-        <p className="mt-6 text-3xl font-bold">Natalia Teglia</p>
-        <p className="text-2xl font-bold">President</p>
+        <p className="mt-6 text-5xl font-extrabold">Natalia Teglia</p>
+        <p className="text-3xl font-extrabold">President</p>
       </div>
 
       <div>
@@ -31,8 +31,8 @@ const BoardFirstRow = () => {
             />
           </div>
         </div>
-        <p className="mt-6 text-3xl font-bold">Keaton Bunker</p>
-        <p className="text-2xl">Vice President</p>
+        <p className="mt-6 text-5xl font-extrabold">Keaton Bunker</p>
+        <p className="text-3xl font-extrabold">Vice President</p>
       </div>
     </div>
   );
