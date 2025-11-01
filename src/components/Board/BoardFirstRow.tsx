@@ -7,7 +7,7 @@ const BoardFirstRow = () => {
     <div className="text-mocktrial-darkblue flex flex-col justify-center gap-20 py-40 text-center md:flex-row">
       <div>
         <div className="relative h-100 w-100">
-          <div className="absolute inset-0 rounded-3xl bg-linear-to-t from-[#E7C67E] to-[#E1AF42]"></div>
+          <div className="absolute inset-0 rounded-3xl bg-linear-to-t from-[#E7C67E] to-[#E1AF42]" />
           <div className="absolute -top-53">
             <Image
               src={President}
@@ -16,13 +16,13 @@ const BoardFirstRow = () => {
             />
           </div>
         </div>
-        <p className="mt-6 text-5xl font-extrabold">Natalia Teglia</p>
-        <p className="text-3xl font-extrabold">President</p>
+        <p className="mt-6 text-3xl font-bold">Natalia Teglia</p>
+        <p className="text-2xl">President</p>
       </div>
 
       <div>
         <div className="relative h-100 w-100">
-          <div className="absolute inset-0 rounded-3xl bg-linear-to-t from-[#E7C67E] to-[#E1AF42]"></div>
+          <div className="absolute inset-0 rounded-3xl bg-linear-to-t from-[#E7C67E] to-[#E1AF42]" />
           <div className="absolute -top-58.5 -left-10">
             <Image
               src={VicePresident}
@@ -31,8 +31,8 @@ const BoardFirstRow = () => {
             />
           </div>
         </div>
-        <p className="mt-6 text-5xl font-extrabold">Keaton Bunker</p>
-        <p className="text-3xl font-extrabold">Vice President</p>
+        <p className="mt-6 text-3xl font-bold">Keaton Bunker</p>
+        <p className="text-2xl">Vice President</p>
       </div>
     </div>
   );
