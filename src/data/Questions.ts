@@ -16,13 +16,14 @@ const Questions = [
       "Do I need to be a specific major or be 'pre-law' in order to audition?",
   },
   {
-    question: "When does Highlander Mock Trial meet",
+    question: "When does Highlander Mock Trial meet?",
   },
   {
-    question: "Where does Highlander Mock Trial meet",
+    question: "Where does Highlander Mock Trial meet?",
   },
   {
-    question: "What should I do if I have a question that wasn't answered here",
+    question:
+      "What should I do if I have a question that wasn't answered here?",
   },
 ];
 
