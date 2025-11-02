@@ -1,4 +1,7 @@
-export const Questions = [
+const Questions = [
+  {
+    question: "What is Mock Trial?",
+  },
   {
     question: "How can I join Highlander Mock Trial?",
   },
@@ -22,3 +25,5 @@ export const Questions = [
     question: "What should I do if I have a question that wasn't answered here",
   },
 ];
+
+export default Questions;
