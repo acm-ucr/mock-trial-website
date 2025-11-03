@@ -1,7 +1,13 @@
+import Header from "@/components/Header";
+import AboutUs from "@/components/Home/AboutUs";
+import JoinUs from "@/components/Home/JoinUs";
+
 const Home = () => {
   return (
-    <div className="flex h-screen w-screen items-center justify-center">
-      Hello World
+    <div className="bg-mocktrial-lightblue">
+      <Header title="About Us" />
+      <AboutUs />
+      <JoinUs />
     </div>
   );
 };
