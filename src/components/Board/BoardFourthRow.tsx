@@ -7,7 +7,7 @@ const BoardFourthRow = () => {
     <div className="text-mocktrial-darkblue flex flex-col justify-center gap-20 py-40 text-center md:flex-row">
       <div>
         <div className="relative h-100 w-100">
-          <div className="absolute inset-0 rounded-3xl bg-linear-to-t from-[#E7C67E] to-[#E1AF42]"/>
+          <div className="absolute inset-0 rounded-3xl bg-linear-to-t from-[#E7C67E] to-[#E1AF42]" />
           <div className="absolute -top-17 left-4">
             <Image
               src={Arin}
@@ -22,7 +22,7 @@ const BoardFourthRow = () => {
 
       <div>
         <div className="relative h-100 w-100">
-          <div className="absolute inset-0 rounded-3xl bg-linear-to-t from-[#E7C67E] to-[#E1AF42]"/>
+          <div className="absolute inset-0 rounded-3xl bg-linear-to-t from-[#E7C67E] to-[#E1AF42]" />
           <div className="absolute -top-40">
             <Image
               src={Praghya}
