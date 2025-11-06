@@ -8,7 +8,6 @@ const Board = () => {
       {boardInfo.map((CARD, index) => (
         <BoardCard
           key={index}
-          index={index}
           name={CARD.name}
           title={CARD.title}
           image={CARD.image}
