@@ -4,17 +4,14 @@ import Image, { StaticImageData } from "next/image";
 type Properties = {
   image: StaticImageData;
   text: string;
-  size: string;
 };
 
-const RightAchCard = ({ image, text, size }: Properties) => {
+const RightAchCard = ({ image, text }: Properties) => {
   return (
-    <div className="hidden md:block">
+    <div>
       <div className="grid h-[65vh] grid-cols-2">
         <div className="bg-mocktrial-blue flex items-center justify-center text-white">
-          <p
-            className={`${size} px-6 text-center leading-tight font-semibold tracking-wide`}
-          >
+          <p className="px-6 text-center text-4xl leading-tight font-semibold tracking-wide">
             {text}
           </p>
         </div>

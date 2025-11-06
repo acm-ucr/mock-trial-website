@@ -9,32 +9,33 @@ const achievementsData = [
   {
     image: spamta_winner,
     text: "2024-2025 Spamta Winner",
-    size: "text-5xl",
+    // size: "text-4xl",
   },
   {
     image: indivisual_awards,
     text: "19 Individual Awards",
-    size: "text-5xl",
+    // size: "text-4xl",
   },
   {
     image: team_finishes,
     text: "6 Top 5 Team Finishes",
-    size: "text-5xl",
+    // size: "text-4xl",
   },
   {
     image: regional_spamta_winners,
     text: "Regional Spamta Winner",
-    size: "text-5xl",
+    // size: "text-4xl",
   },
   {
     image: champion_series,
-    text: "First Bid to the opening round championship series in 7 years",
-    size: "text-4xl",
+    // text: "First Bid to the opening round championship series in 7 years",
+    text: "First Championship Bid in 7 Years",
+    // size: "text-3xl",
   },
   {
     image: ranked_top_25,
     text: "Rank within top 25% of team in the country",
-    size: "text-4xl",
+    // size: "text-4xl",
   },
 ];
 
