@@ -9,7 +9,6 @@ type Properties = {
 
 const LeftAchMobileCard = ({ image, text }: Properties) => {
   return (
-    // <div className="mb-1">
     <div className="ring-mocktrial-yellow bg-mocktrial-blue mr-15 ml-15 grid h-[20vh] grid-cols-3 overflow-hidden rounded-3xl text-white shadow-2xl ring-8">
       <div className="relative col-span-1 rounded-l-3xl">
         <Image
@@ -25,7 +24,6 @@ const LeftAchMobileCard = ({ image, text }: Properties) => {
         </p>
       </div>
     </div>
-    // </div>
   );
 };
 

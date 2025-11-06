@@ -10,7 +10,6 @@ const AchievementsGrid = () => {
       <div className="mt-10 block md:hidden"></div>
       {AchievementsData.map(({ image, text }, index) => (
         <div key={index}>
-          {/* Mobile View */}
           <div className="mt-13 block md:hidden">
             {index % 2 === 0 ? (
               <LeftAchMobileCard image={image} text={text} />
@@ -18,7 +17,7 @@ const AchievementsGrid = () => {
               <RightAchMobileCard image={image} text={text} />
             )}
           </div>
-          {/* Desktop View */}
+
           <div className="hidden md:block">
             {index % 2 === 0 ? (
               <LeftAchCard image={image} text={text} />
@@ -30,8 +29,6 @@ const AchievementsGrid = () => {
       ))}
       <div className="mb-45 block md:hidden"></div>
     </div>
-
-    // <div className="block md:hidden mb-20"></div>
   );
 };
 
