@@ -1,11 +1,11 @@
-import Abinaya from "@/public/board/Abinaya_Hariharan1.webp";
-import Arin from "@/public/board/Arin_Nergizyan1.webp";
-import Keaton from "@/public/board/Keaton_Bunker1.webp";
-import Natalia from "@/public/board/Natalia_Teglia1.webp";
-import Pascale from "@/public/board/Pascale_Gibbs1.webp";
-import Praghya from "@/public/board/Praghya_Ramesh1.webp";
-import Sri from "@/public/board/Sri_Vidya_Charepalli1.webp";
-import Tejal from "@/public/board/Tejal_Prabhu1.webp";
+import Abinaya from "@/public/board/Abinaya_Hariharan2.webp";
+import Arin from "@/public/board/Arin_Nergizyan2.webp";
+import Keaton from "@/public/board/Keaton_Bunker2.webp";
+import Natalia from "@/public/board/Natalia_Teglia2.webp";
+import Pascale from "@/public/board/Pascale_Gibbs2.webp";
+import Praghya from "@/public/board/Praghya_Ramesh2.webp";
+import Sri from "@/public/board/Sri_Vidya_Charepalli2.webp";
+import Tejal from "@/public/board/Tejal_Prabhu2.webp";
 
 export const boardInfo = [
   {

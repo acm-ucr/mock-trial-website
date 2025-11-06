@@ -13,7 +13,7 @@ const BoardCard: React.FC<BoardCardProps> = ({ image, name, title }) => {
         <Image
           src={image}
           alt="Picture of person"
-          className="object-cover object-top"
+          className="mt-10 object-cover object-top"
         />
       </div>
       <p className="mt-6 text-3xl font-bold">{name}</p>
