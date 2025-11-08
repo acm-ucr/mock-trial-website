@@ -2,10 +2,10 @@
 
 import Image, { StaticImageData } from "next/image";
 
-type Properties = {
+interface Properties {
   image: StaticImageData;
   text: string;
-};
+}
 
 const LeftAchCard = ({ image, text }: Properties) => {
   return (

@@ -7,7 +7,7 @@ import AchievementsData from "@/data/AchievementsData";
 const AchievementsGrid = () => {
   return (
     <div className="bg-mocktrial-lightblue relative grid grid-cols-1">
-      <div className="mt-10 block md:hidden"></div>
+      <div className="mt-10 block md:hidden" />
       {AchievementsData.map(({ image, text }, index) => (
         <div key={index}>
           <div className="mt-13 block md:hidden">
@@ -27,7 +27,7 @@ const AchievementsGrid = () => {
           </div>
         </div>
       ))}
-      <div className="mb-45 block md:hidden"></div>
+      <div className="mb-45 block md:hidden" />
     </div>
   );
 };
