@@ -9,7 +9,7 @@ interface BoardCardProps {
 const BoardCard: React.FC<BoardCardProps> = ({ image, name, title }) => {
   return (
     <div className="text-mocktrial-darkblue text-center">
-      <div className="relative aspect-[3/4] w-90 overflow-hidden rounded-3xl">
+      <div className="relative aspect-[3/4] w-100 overflow-hidden rounded-3xl">
         <Image
           src={image}
           alt="Picture of person"
