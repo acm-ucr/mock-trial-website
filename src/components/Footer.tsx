@@ -16,7 +16,7 @@ const Footer = () => {
               className="hover:text-mocktrial-yellow"
               target="_blank"
             >
-              <FaInstagram className="h-10 w-10 md:h-5 md:w-5 lg:h-8 lg:w-8" />
+              <FaInstagram className="h-10 w-10 md:h-8 md:w-8 lg:h-10 lg:w-10" />
             </Link>
             <Link
               href="mailto:mocktrialucr@gmail.com"
@@ -24,7 +24,7 @@ const Footer = () => {
               className="hover:text-mocktrial-yellow"
               target="_blank"
             >
-              <FaEnvelope className="h-10 w-10 md:h-5 md:w-5 lg:h-8 lg:w-8" />
+              <FaEnvelope className="h-10 w-10 md:h-8 md:w-8 lg:h-10 lg:w-10" />
             </Link>
             <Link
               href="https://linktr.ee/ucrmocktrial?fbclid=PAZXh0bgNhZW0CMTEAAae4LOAPDYatdDZdzOftG7SkkTRiC2YH41vIJB8O6YoK_1ieIevAETvgGIZcsw_aem_7E2TjaORacH8vCJ3rwlmeQ"
@@ -32,7 +32,7 @@ const Footer = () => {
               className="hover:text-mocktrial-yellow"
               target="_blank"
             >
-              <FaLink className="h-10 w-10 md:h-5 md:w-5 lg:h-8 lg:w-8" />
+              <FaLink className="h-10 w-10 md:h-8 md:w-8 lg:h-10 lg:w-10" />
             </Link>
           </div>
         </div>
