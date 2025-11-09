@@ -16,8 +16,8 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="from-mocktrial-darkblue to-mocktrial-blue font-mocktrial-montserrat relative hidden bg-gradient-to-t p-5 md:flex">
-        <div className="ml-2 flex-shrink-0 md:ml-10">
+      <div className="from-mocktrial-darkblue to-mocktrial-blue font-mocktrial-montserrat relative hidden w-full items-center justify-between bg-gradient-to-t p-5 md:flex">
+        <div className="flex-shrink-0 md:ml-10">
           <Link href="/">
             <Image
               src={mockLogo}
@@ -29,7 +29,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div className="mr-2 ml-auto flex items-center justify-end gap-4 text-sm font-bold text-white md:ml-43 md:gap-4 md:text-xl lg:gap-25 lg:text-2xl">
+        <div className="flex items-center gap-4 text-sm font-bold text-white md:mr-10 md:gap-10 md:text-xl lg:gap-20 lg:text-2xl">
           {navigations.map(({ link, name }, index) => (
             <div key={index}>
               <Link
@@ -52,7 +52,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="text-mocktrial-blue border-mocktrial-blue fixed bottom-8 left-1/2 z-50 flex w-[90%] max-w-md -translate-x-1/2 justify-around rounded-full border-4 bg-[#CEE0FF] py-3 md:hidden">
+      <div className="text-mocktrial-blue border-mocktrial-blue bg-mocktrial-paleblue fixed bottom-8 left-1/2 z-50 flex w-11/12 max-w-md -translate-x-1/2 justify-around rounded-full border-4 py-3 md:hidden">
         <Link href="/" className="flex flex-col items-center">
           <LiaHomeSolid size={20} />
           <div className="mt-1 text-xs font-semibold">HOME</div>
