@@ -1,11 +1,24 @@
 const AboutUs = () => {
   return (
-    <div className="bg-mocktrial-yellow m-4 mx-auto w-lg rounded-3xl p-3">
-      <p className="bg-mocktrial-blue font-mocktrial-montserrat rounded-2xl p-6 text-center text-xl font-semibold text-white">
-        Mock Trial is a competitive team based activity where students simulate
-        a real trial. Students act as both the attorneys and witnesses in the
-        trial. Students are scored based on their arguments and performance.
-      </p>
+    <div>
+      <div className="bg-mocktrial-yellow m-4 mx-auto w-xs sm:w-sm md:w-md lg:w-lg rounded-3xl p-3">
+        <p className="bg-mocktrial-blue font-mocktrial-montserrat rounded-2xl p-6 text-center text-sm sm:text-md md:text-lg lg:text-xl font-semibold text-white">
+          Mock Trial is a competitive team based activity where students simulate
+          a real trial. Students act as both the attorneys and witnesses in the
+          trial. Students are scored based on their arguments and performance. hello
+        </p>
+      </div>
+
+      <div className="text-mocktrial-darkblue text-center">
+        <p className="mb-4 text-xl font-bold sm:mb-6 sm:text-xl md:text-2xl lg:text-3xl">
+          To join, email
+        </p>
+        <div className="bg-mocktrial-yellow inline-block rounded-full px-6 py-3.5 sm:px-8 sm:py-4 md:px-8 md:py-4 lg:px-10 lg:py-4.5">
+          <div className="text-sm font-semibold underline sm:text-base md:text-lg lg:text-xl">
+            mocktrialucr@gmail.com
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
