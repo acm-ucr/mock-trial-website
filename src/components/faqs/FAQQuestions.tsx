@@ -2,10 +2,12 @@ import FAQQuestionsCard from "@/components/faqs/FAQQuestionsCard";
 
 interface FAQQuestion {
   question: string;
+  answer: string;
   id?: string;
 }
 interface FAQProps {
   faqData: FAQQuestion[];
+  renderItem?: (item: FAQQuestion) => React.ReactNode;
 }
 
 const FAQQuestions = ({ faqData }: FAQProps) => {
