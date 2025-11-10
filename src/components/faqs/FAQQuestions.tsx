@@ -7,7 +7,6 @@ interface FAQQuestion {
 }
 interface FAQProps {
   faqData: FAQQuestion[];
-  renderItem?: (item: FAQQuestion) => React.ReactNode;
 }
 
 const FAQQuestions = ({ faqData }: FAQProps) => {
