@@ -1,6 +1,6 @@
 const AboutUs = () => {
   return (
-    <div>
+    <>
       <div className="bg-mocktrial-yellow m-4 mx-auto w-xs rounded-3xl p-3 sm:w-sm md:w-md lg:w-lg">
         <p className="bg-mocktrial-blue font-mocktrial-montserrat sm:text-md rounded-2xl p-6 text-center text-sm font-semibold text-white md:text-lg lg:text-xl">
           Mock Trial is a competitive team based activity where students
@@ -20,7 +20,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 export default AboutUs;
