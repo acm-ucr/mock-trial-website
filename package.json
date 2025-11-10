@@ -6,8 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
     "format": "npx prettier --write .",
+    "lint": "next lint",
     "check": "npx prettier --check .",
     "eslint": "npx eslint -c eslint.config.mjs",
     "prepare": "husky"
