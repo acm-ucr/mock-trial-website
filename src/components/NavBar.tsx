@@ -15,15 +15,21 @@ const Navbar = () => {
   const pathName = usePathname();
 
   return (
-    <div>
-      <div className="from-mocktrial-darkblue to-mocktrial-blue font-mocktrial-montserrat relative hidden bg-gradient-to-t p-5 md:flex">
-        <div className="ml-10">
+    <>
+      <div className="from-mocktrial-darkblue to-mocktrial-blue font-mocktrial-montserrat relative hidden w-full items-center justify-between bg-gradient-to-t p-5 md:flex">
+        <div className="flex-shrink-0 md:ml-10">
           <Link href="/">
-            <Image src={mockLogo} alt="Mock Logo" width={80} />
+            <Image
+              src={mockLogo}
+              alt="Mock Logo"
+              width={80}
+              height={80}
+              className="h-16 w-16 md:h-20 md:w-20"
+            />
           </Link>
         </div>
 
-        <div className="ml-43 flex items-center justify-center gap-25 text-2xl font-bold text-white">
+        <div className="flex items-center gap-4 text-sm font-bold text-white md:mr-10 md:gap-10 md:text-xl lg:gap-20 lg:text-2xl">
           {navigations.map(({ link, name }, index) => (
             <div key={index}>
               <Link
@@ -37,8 +43,8 @@ const Navbar = () => {
             </div>
           ))}
           <Link
-            href="https://linktr.ee/ucrmocktrial"
-            className="bg-mocktrial-yellow rounded-2xl px-5 py-2 text-2xl font-bold text-white"
+            href="https://linktr.ee/ucrmocktrial?fbclid=PAZXh0bgNhZW0CMTEAAae4LOAPDYatdDZdzOftG7SkkTRiC2YH41vIJB8O6YoK_1ieIevAETvgGIZcsw_aem_7E2TjaORacH8vCJ3rwlmeQ"
+            className="bg-mocktrial-yellow rounded-2xl px-2 py-1 text-sm font-bold text-white md:px-5 md:py-2 md:text-xl lg:text-2xl"
             target="_blank"
           >
             Connect
@@ -46,7 +52,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="text-mocktrial-blue border-mocktrial-blue fixed bottom-4 left-1/2 z-50 flex w-9/10 -translate-x-1/2 justify-around rounded-full border-4 bg-[#CEE0FF] py-3 md:hidden">
+      <div className="text-mocktrial-blue border-mocktrial-blue bg-mocktrial-paleblue fixed bottom-8 left-1/2 z-50 flex w-11/12 max-w-md -translate-x-1/2 justify-around rounded-full border-4 py-3 md:hidden">
         <Link href="/" className="flex flex-col items-center">
           <LiaHomeSolid size={20} />
           <div className="mt-1 text-xs font-semibold">HOME</div>
@@ -54,7 +60,6 @@ const Navbar = () => {
 
         <Link href="/board" className="flex flex-col items-center">
           <AiOutlineTeam size={20} />
-
           <div className="mt-1 text-xs font-semibold">BOARD</div>
         </Link>
 
@@ -69,15 +74,15 @@ const Navbar = () => {
         </Link>
 
         <Link
-          href="https://linktr.ee/ucrmocktrial"
-          target="_blank"
+          href="https://linktr.ee/ucrmocktrial?fbclid=PAZXh0bgNhZW0CMTEAAae4LOAPDYatdDZdzOftG7SkkTRiC2YH41vIJB8O6YoK_1ieIevAETvgGIZcsw_aem_7E2TjaORacH8vCJ3rwlmeQ"
           className="flex flex-col items-center"
+          target="_blank"
         >
           <BiLinkAlt size={20} />
           <div className="mt-1 text-xs font-semibold">CONNECT</div>
         </Link>
       </div>
-    </div>
+    </>
   );
 };
 
