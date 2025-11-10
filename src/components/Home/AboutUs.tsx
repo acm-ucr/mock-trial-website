@@ -1,11 +1,12 @@
 const AboutUs = () => {
   return (
     <div>
-      <div className="bg-mocktrial-yellow m-4 mx-auto w-xs sm:w-sm md:w-md lg:w-lg rounded-3xl p-3">
-        <p className="bg-mocktrial-blue font-mocktrial-montserrat rounded-2xl p-6 text-center text-sm sm:text-md md:text-lg lg:text-xl font-semibold text-white">
-          Mock Trial is a competitive team based activity where students simulate
-          a real trial. Students act as both the attorneys and witnesses in the
-          trial. Students are scored based on their arguments and performance. hello
+      <div className="bg-mocktrial-yellow m-4 mx-auto w-xs rounded-3xl p-3 sm:w-sm md:w-md lg:w-lg">
+        <p className="bg-mocktrial-blue font-mocktrial-montserrat sm:text-md rounded-2xl p-6 text-center text-sm font-semibold text-white md:text-lg lg:text-xl">
+          Mock Trial is a competitive team based activity where students
+          simulate a real trial. Students act as both the attorneys and
+          witnesses in the trial. Students are scored based on their arguments
+          and performance. hello
         </p>
       </div>
 
