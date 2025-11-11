@@ -11,7 +11,7 @@ const RightAchMobileCard = ({ image, text }: Properties) => {
   return (
     <div className="ring-mocktrial-yellow bg-mocktrial-blue mr-15 ml-15 grid h-[20vh] grid-cols-3 overflow-hidden rounded-3xl text-white shadow-2xl ring-8">
       <div className="col-span-2 flex items-center justify-center">
-        <p className="px-6 text-center text-sm sm:text-lg md:text-2xl lg:text-3xl leading-tight font-semibold tracking-wide">
+        <p className="px-6 text-center text-sm leading-tight font-semibold tracking-wide sm:text-lg md:text-2xl lg:text-3xl">
           {text}
         </p>
       </div>
