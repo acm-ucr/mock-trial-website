@@ -19,7 +19,7 @@ const LeftAchMobileCard = ({ image, text }: Properties) => {
         />
       </div>
       <div className="col-span-2 flex items-center justify-center">
-        <p className="px-6 text-center text-3xl leading-tight font-semibold tracking-wide">
+        <p className="px-6 text-center text-sm sm:text-lg md:text-2xl lg:text-3xl leading-tight font-semibold tracking-wide">
           {text}
         </p>
       </div>
