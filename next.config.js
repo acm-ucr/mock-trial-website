@@ -1,14 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
   reactStrictMode: true,
   images: {
-    loader: "akamai",
-    path: "",
     unoptimized: true,
   },
-  basePath: "",
-  assetPrefix: "",
+  outputFileTracingRoot: __dirname,
 };
 
 module.exports = nextConfig;
