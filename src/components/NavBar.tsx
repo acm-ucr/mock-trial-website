@@ -24,19 +24,19 @@ const Navbar = () => {
               alt="Mock Logo"
               width={80}
               height={80}
-              className="h-16 w-16 md:h-20 md:w-20"
+              className="h-16 w-16 md:h-20 md:w-20 rounded-full border-mocktrial-yellow md:border-4"
             />
           </Link>
         </div>
 
-        <div className="flex items-center gap-4 text-sm font-bold text-white md:mr-10 md:gap-10 md:text-xl lg:gap-20 lg:text-2xl">
+        <div className="flex items-center gap-4 text-sm font-bold text-white md:mr-10 md:gap-10 md:text-xl lg:gap-20 lg:text-2xl ">
           {navigations.map(({ link, name }, index) => (
             <div key={index}>
               <Link
                 href={link}
-                className={
+                className={`p-2 ${
                   pathName === link ? "text-mocktrial-yellow" : "text-white"
-                }
+                }`}
               >
                 {name}
               </Link>
