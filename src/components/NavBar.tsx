@@ -10,6 +10,11 @@ import { AiOutlineTeam } from "react-icons/ai";
 import { LuTrophy } from "react-icons/lu";
 import { FaRegQuestionCircle } from "react-icons/fa";
 import { BiLinkAlt } from "react-icons/bi";
+import { motion } from "motion/react";
+
+const NavAnimation = {
+  whileHover: { scale: 1.05 },
+};
 
 const Navbar = () => {
   const pathName = usePathname();
@@ -18,37 +23,41 @@ const Navbar = () => {
     <>
       <div className="from-mocktrial-darkblue to-mocktrial-blue font-mocktrial-montserrat relative hidden w-full items-center justify-between bg-gradient-to-t p-5 md:flex">
         <div className="flex-shrink-0 md:ml-10">
-          <Link href="/">
-            <Image
-              src={mockLogo}
-              alt="Mock Logo"
-              width={80}
-              height={80}
-              className="h-16 w-16 md:h-20 md:w-20 rounded-full border-mocktrial-yellow md:border-4"
-            />
-          </Link>
+          <motion.div {...NavAnimation}>
+            <Link href="/">
+              <Image
+                src={mockLogo}
+                alt="Mock Logo"
+                width={80}
+                height={80}
+                className="border-mocktrial-yellow h-16 w-16 rounded-full md:h-20 md:w-20 md:border-4"
+              />
+            </Link>
+          </motion.div>
         </div>
 
-        <div className="flex items-center gap-4 text-sm font-bold text-white md:mr-10 md:gap-10 md:text-xl lg:gap-20 lg:text-2xl ">
+        <div className="flex items-center gap-4 text-sm font-bold text-white md:mr-10 md:gap-10 md:text-xl lg:gap-20 lg:text-2xl">
           {navigations.map(({ link, name }, index) => (
             <div key={index}>
               <Link
                 href={link}
-                className={`p-2 ${
+                className={`p-2 hover:text-[#ffd16e] ${
                   pathName === link ? "text-mocktrial-yellow" : "text-white"
                 }`}
               >
-                {name}
+                <motion.div {...NavAnimation}>{name}</motion.div>
               </Link>
             </div>
           ))}
-          <Link
-            href="https://linktr.ee/ucrmocktrial?fbclid=PAZXh0bgNhZW0CMTEAAae4LOAPDYatdDZdzOftG7SkkTRiC2YH41vIJB8O6YoK_1ieIevAETvgGIZcsw_aem_7E2TjaORacH8vCJ3rwlmeQ"
-            className="bg-mocktrial-yellow rounded-2xl px-2 py-1 text-sm font-bold text-white md:px-5 md:py-2 md:text-xl lg:text-2xl"
-            target="_blank"
-          >
-            Connect
-          </Link>
+          <motion.div {...NavAnimation}>
+            <Link
+              href="https://linktr.ee/ucrmocktrial?fbclid=PAZXh0bgNhZW0CMTEAAae4LOAPDYatdDZdzOftG7SkkTRiC2YH41vIJB8O6YoK_1ieIevAETvgGIZcsw_aem_7E2TjaORacH8vCJ3rwlmeQ"
+              className="bg-mocktrial-yellow rounded-2xl px-2 py-1 text-sm font-bold text-white md:px-5 md:py-2 md:text-xl lg:text-2xl"
+              target="_blank"
+            >
+              Connect
+            </Link>
+          </motion.div>
         </div>
       </div>
 
