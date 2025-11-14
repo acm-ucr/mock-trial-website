@@ -1,14 +1,24 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
+
+const fadeInUp = {
+  initial: { opacity: 0, y: 30 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.6 },
+};
+
+const fadeInUpDelayed = {
+  initial: { opacity: 0, y: 30 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.6, delay: 0.2 },
+};
 
 const AboutUs = () => {
   return (
     <>
       <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
+        {...fadeInUp}
         className="bg-mocktrial-yellow m-4 mx-auto w-xs rounded-3xl p-3 sm:w-sm md:w-md lg:w-lg"
       >
         <p className="bg-mocktrial-blue font-mocktrial-montserrat sm:text-md rounded-2xl p-6 text-center text-sm font-semibold text-white md:text-lg lg:text-xl">
@@ -20,9 +30,7 @@ const AboutUs = () => {
       </motion.div>
 
       <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+        {...fadeInUpDelayed}
         className="text-mocktrial-darkblue text-center"
       >
         <p className="mb-4 text-xl font-bold sm:mb-6 sm:text-xl md:text-2xl lg:text-3xl">
