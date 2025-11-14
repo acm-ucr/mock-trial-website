@@ -2,6 +2,7 @@ import FAQQuestionsCard from "@/components/faqs/FAQQuestionsCard";
 
 interface FAQQuestion {
   question: string;
+  answer: string;
   id?: string;
 }
 interface FAQProps {
