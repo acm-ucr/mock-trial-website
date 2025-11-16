@@ -41,7 +41,7 @@ const Navbar = () => {
             <div key={index}>
               <Link
                 href={link}
-                className={`p-2 hover:text-[#ffd16e] ${
+                className={`p-2 hover:text-mocktrial-lightyellow ${
                   pathName === link ? "text-mocktrial-yellow" : "text-white"
                 }`}
               >
