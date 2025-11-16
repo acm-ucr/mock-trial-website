@@ -23,7 +23,7 @@ const FAQS = () => {
         {Questions.map((item, index) => (
           <motion.div
             key={index}
-            className="bg-mocktrial-seablue text-mocktrial-blue border-mocktrial-blue mx-auto my-0.5 flex w-2/3 flex-col rounded-xl border-6 p-5 last:mb-26 md:last:mb-12 lg:w-3xl lg:border-8"
+            className="bg-mocktrial-seablue text-mocktrial-blue border-mocktrial-blue mx-auto my-0.5 flex w-2/3 flex-col rounded-xl border-6 p-5 last:mb-26 md:border-7 md:last:mb-12 lg:w-3xl lg:border-8"
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.25 }}
