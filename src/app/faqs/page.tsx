@@ -39,7 +39,7 @@ const FAQS = () => {
                   {item.question}
                 </p>
               </AccordionTrigger>
-              <AccordionContent className="text-mocktrial-blue px-4 py-2 text-lg">
+              <AccordionContent className="text-mocktrial-blue px-4 py-2">
                 {item.answer}
               </AccordionContent>
             </AccordionItem>
