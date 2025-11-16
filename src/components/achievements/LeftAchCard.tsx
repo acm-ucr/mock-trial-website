@@ -20,7 +20,7 @@ const LeftAchCard = ({ image, text }: Properties) => {
       </div>
 
       <div className="bg-mocktrial-blue flex items-center justify-center text-white">
-        <p className="px-6 text-center text-4xl leading-tight font-semibold tracking-wide">
+        <p className="px-6 text-center text-sm leading-tight font-semibold tracking-wide sm:text-lg md:text-2xl lg:text-3xl">
           {text}
         </p>
       </div>
