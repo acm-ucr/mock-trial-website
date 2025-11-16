@@ -3,6 +3,7 @@
 import * as React from "react";
 import * as AccordionPrimitive from "@radix-ui/react-accordion";
 import { IoIosArrowForward } from "react-icons/io";
+import { motion } from "motion/react";
 
 import { cn } from "@/lib/utils";
 
@@ -24,7 +25,7 @@ const AccordionTrigger = React.forwardRef<
     <AccordionPrimitive.Trigger
       ref={ref}
       className={cn(
-        "flex items-center justify-between py-4 text-2xl font-bold hover:underline [&[data-state=open]>svg]:rotate-180",
+        "flex items-center justify-between py-4 text-left text-2xl font-bold hover:underline [&[data-state=open]>svg]:rotate-180",
         className,
       )}
       {...props}
@@ -39,13 +40,21 @@ AccordionTrigger.displayName = AccordionPrimitive.Trigger.displayName;
 const AccordionContent = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Content>,
   React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Content>
->(({ className, children, ...props }, ref) => (
+>(({ children, ...props }, ref) => (
   <AccordionPrimitive.Content
     ref={ref}
-    className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-2xl font-medium"
+    className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden pl-4 text-lg font-medium"
     {...props}
   >
-    <div className={cn("pt-0 pb-4", className)}>{children}</div>
+    <motion.div
+      initial={{ opacity: 0, y: 15 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 15 }}
+      transition={{ duration: 1, delay: 0.25 }}
+      className="pt-0 pb-4"
+    >
+      {children}
+    </motion.div>
   </AccordionPrimitive.Content>
 ));
 AccordionContent.displayName = AccordionPrimitive.Content.displayName;

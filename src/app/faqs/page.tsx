@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "motion/react";
 import {
   Accordion,
   AccordionContent,
@@ -18,9 +21,13 @@ const FAQS = () => {
         className="mx-auto flex flex-col gap-6 py-8"
       >
         {Questions.map((item, index) => (
-          <div
+          <motion.div
             key={index}
-            className="bg-mocktrial-seablue text-mocktrial-blue border-mocktrial-blue mx-auto my-0.5 flex w-1/2 flex-col rounded-xl border-8 p-5 last:mb-12"
+            className="bg-mocktrial-seablue text-mocktrial-blue border-mocktrial-blue mx-auto my-0.5 flex w-2/3 flex-col rounded-xl border-6 p-5 last:mb-26 md:last:mb-12 lg:w-3xl lg:border-8"
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.3 }}
+            viewport={{ once: true }}
           >
             <AccordionItem
               key={index}
@@ -28,7 +35,7 @@ const FAQS = () => {
               className="w-full"
             >
               <AccordionTrigger className="flex w-full items-center py-2">
-                <p className="text-mocktrial-blue pl-4 text-3xl font-bold">
+                <p className="text-mocktrial-blue pl-4 text-xl font-bold md:text-2xl lg:text-3xl">
                   {item.question}
                 </p>
               </AccordionTrigger>
@@ -36,7 +43,7 @@ const FAQS = () => {
                 {item.answer}
               </AccordionContent>
             </AccordionItem>
-          </div>
+          </motion.div>
         ))}
       </Accordion>
     </div>
