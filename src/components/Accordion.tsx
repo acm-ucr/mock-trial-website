@@ -1,9 +1,6 @@
-"use client";
-
 import * as React from "react";
 import * as AccordionPrimitive from "@radix-ui/react-accordion";
 import { IoIosArrowForward } from "react-icons/io";
-import { motion } from "motion/react";
 
 import { cn } from "@/lib/utils";
 
@@ -25,7 +22,7 @@ const AccordionTrigger = React.forwardRef<
     <AccordionPrimitive.Trigger
       ref={ref}
       className={cn(
-        "flex cursor-pointer items-center justify-between py-4 text-left text-2xl font-bold hover:underline [&[data-state=open]>svg]:rotate-180",
+        "flex cursor-pointer items-center justify-between py-4 text-left text-2xl font-bold hover:underline [&[data-state=open]>svg]:rotate-90",
         className,
       )}
       {...props}
@@ -46,15 +43,7 @@ const AccordionContent = React.forwardRef<
     className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down text-md overflow-hidden pl-4 font-medium md:text-lg"
     {...props}
   >
-    <motion.div
-      initial={{ opacity: 0, y: 15 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: 15 }}
-      transition={{ duration: 1, delay: 0.25 }}
-      className="pt-0 pb-4"
-    >
-      {children}
-    </motion.div>
+    {children}
   </AccordionPrimitive.Content>
 ));
 AccordionContent.displayName = AccordionPrimitive.Content.displayName;
