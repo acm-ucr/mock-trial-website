@@ -24,9 +24,9 @@ const AchievementsGrid = () => {
         <div key={index}>
           <div className="mt-13 block md:hidden">
             {index % 2 === 0 ? (
-              <LeftAchMobileCard image={image} text={text} />
+              <LeftAchMobileCard image={image} text={text} index={index} />
             ) : (
-              <RightAchMobileCard image={image} text={text} />
+              <RightAchMobileCard image={image} text={text} index={index} />
             )}
           </div>
 
