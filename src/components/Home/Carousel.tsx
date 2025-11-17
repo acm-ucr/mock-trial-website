@@ -79,7 +79,7 @@ const CarouselCSA = ({ photos }: CarouselProps) => {
                   alt={alt}
                   fill
                   className={cn(
-                    "object-cover", // ensures each image fills the box without distortion
+                    "object-cover",
                     index === (currIndex - 1 + photos.length) % photos.length
                       ? "clip-left"
                       : "",
