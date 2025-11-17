@@ -2,15 +2,15 @@
 
 import Image, { StaticImageData } from "next/image";
 
-interface Properties {
+type Properties = {
   image: StaticImageData;
   text: string;
-}
+};
 
-const LeftAchCard = ({ image, text }: Properties) => {
+const LeftAchMobileCard = ({ image, text }: Properties) => {
   return (
-    <div className="grid h-[65vh] grid-cols-2">
-      <div className="relative">
+    <div className="ring-mocktrial-yellow bg-mocktrial-blue mr-15 ml-15 grid h-[20vh] grid-cols-3 overflow-hidden rounded-3xl text-white shadow-2xl ring-8">
+      <div className="relative col-span-1 rounded-l-3xl">
         <Image
           src={image}
           alt="Achievement Image"
@@ -18,8 +18,7 @@ const LeftAchCard = ({ image, text }: Properties) => {
           className="object-cover"
         />
       </div>
-
-      <div className="bg-mocktrial-blue flex items-center justify-center text-white">
+      <div className="col-span-2 flex items-center justify-center">
         <p className="px-6 text-center text-sm leading-tight font-semibold tracking-wide sm:text-lg md:text-2xl lg:text-3xl">
           {text}
         </p>
@@ -28,4 +27,4 @@ const LeftAchCard = ({ image, text }: Properties) => {
   );
 };
 
-export default LeftAchCard;
+export default LeftAchMobileCard;
