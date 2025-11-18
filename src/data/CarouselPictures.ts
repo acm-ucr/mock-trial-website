@@ -1,8 +1,8 @@
 import { StaticImageData } from "next/image";
-import One from "@/public/home/landing.webp";
-import Two from "@/public/home/IMG_3339.webp";
-import Three from "@/public/home/IMG_2323.webp";
-import Four from "@/public/home/IMG_0002.webp";
+import One from "@/public/home/Carousel1.webp";
+import Two from "@/public/home/Carousel2.webp";
+import Three from "@/public/home/Carousel3.webp";
+import Four from "@/public/home/Carousel4.webp";
 
 interface Photo {
   src: StaticImageData;
