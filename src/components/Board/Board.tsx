@@ -1,6 +1,6 @@
 "use client";
-import BoardCard from "./BoardCard";
-import { boardInfo } from "@/data/boardinfo";
+import BoardCard from "@/components/board/BoardCard";
+import { boardInfo } from "@/data/BoardInfo";
 
 const Board = () => {
   return (
