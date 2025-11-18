@@ -28,14 +28,7 @@ const FAQQuestionsCard = ({ item }: { item: FAQQuestion }) => {
           </p>
         </AccordionTrigger>
         <AccordionContent className="text-mocktrial-blue px-4 py-2 text-lg md:text-xl">
-          <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 15 }}
-            transition={{ duration: 1, delay: 0.25 }}
-          >
-            {item.answer}
-          </motion.div>
+          {item.answer}
         </AccordionContent>
       </AccordionItem>
     </motion.div>
