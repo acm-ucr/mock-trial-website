@@ -1,8 +1,20 @@
+"use client";
 import LeftAchCard from "@/components/achievements/LeftAchCard";
 import RightAchCard from "@/components/achievements/RightAchCard";
 import LeftAchMobileCard from "@/components/achievements/LeftAchMobileCard";
 import RightAchMobileCard from "@/components/achievements/RightAchMobileCard";
 import AchievementsData from "@/data/AchievementsData";
+import { motion } from "motion/react";
+
+const fadeInFromBottomEven = {
+  hidden: { opacity: 0, y: -20 },
+  visible: { opacity: 1, y: 0 },
+};
+
+const fadeInFromBottomOdd = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 },
+};
 
 const AchievementsGrid = () => {
   return (
@@ -20,9 +32,33 @@ const AchievementsGrid = () => {
 
           <div className="hidden md:block">
             {index % 2 === 0 ? (
-              <LeftAchCard image={image} text={text} />
+              <motion.div
+                variants={fadeInFromBottomEven}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{
+                  duration: 0.8,
+                  ease: "easeOut",
+                  delay: index * 0.05,
+                }}
+              >
+                <LeftAchCard image={image} text={text} />
+              </motion.div>
             ) : (
-              <RightAchCard image={image} text={text} />
+              <motion.div
+                variants={fadeInFromBottomOdd}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{
+                  duration: 0.8,
+                  ease: "easeOut",
+                  delay: index * 0.05,
+                }}
+              >
+                <RightAchCard image={image} text={text} />
+              </motion.div>
             )}
           </div>
         </div>
