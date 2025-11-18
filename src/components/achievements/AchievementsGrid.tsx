@@ -4,16 +4,16 @@ import RightAchCard from "@/components/achievements/RightAchCard";
 import LeftAchMobileCard from "@/components/achievements/LeftAchMobileCard";
 import RightAchMobileCard from "@/components/achievements/RightAchMobileCard";
 import AchievementsData from "@/data/AchievementsData";
-import {motion} from "motion/react";
+import { motion } from "motion/react";
 
 const fadeInFromBottomEven = {
   hidden: { opacity: 0, y: -20 },
-  visible: {opacity: 1, y: 0 }
+  visible: { opacity: 1, y: 0 },
 };
 
 const fadeInFromBottomOdd = {
   hidden: { opacity: 0, y: 20 },
-  visible: {opacity: 1, y: 0 }
+  visible: { opacity: 1, y: 0 },
 };
 
 const AchievementsGrid = () => {
@@ -37,7 +37,11 @@ const AchievementsGrid = () => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.3 }}
-                transition={{duration: 0.8, ease: "easeOut", delay: index * 0.05}}
+                transition={{
+                  duration: 0.8,
+                  ease: "easeOut",
+                  delay: index * 0.05,
+                }}
               >
                 <LeftAchCard image={image} text={text} />
               </motion.div>
@@ -47,7 +51,11 @@ const AchievementsGrid = () => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.3 }}
-                transition={{duration: 0.8, ease: "easeOut", delay: index * 0.05}}
+                transition={{
+                  duration: 0.8,
+                  ease: "easeOut",
+                  delay: index * 0.05,
+                }}
               >
                 <RightAchCard image={image} text={text} />
               </motion.div>
