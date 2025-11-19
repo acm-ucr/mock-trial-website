@@ -4,12 +4,12 @@ import Two from "@/public/home/Carousel2.webp";
 import Three from "@/public/home/Carousel3.webp";
 import Four from "@/public/home/Carousel4.webp";
 
-interface Photo {
+export interface Photo {
   src: StaticImageData;
   alt: string;
 }
 
-export const carouselPhotos: Photo[] = [
+const carouselPhotos: Photo[] = [
   {
     src: One,
     alt: "photo 1",
@@ -27,3 +27,5 @@ export const carouselPhotos: Photo[] = [
     alt: "photo 4",
   },
 ];
+
+export default carouselPhotos;
