@@ -7,7 +7,7 @@ import Praghya from "@/public/board/Praghya_Ramesh2.webp";
 import Sri from "@/public/board/Sri_Vidya_Charepalli2.webp";
 import Tejal from "@/public/board/Tejal_Prabhu2.webp";
 
-export const boardInfo = [
+const boardInfo = [
   {
     image: Natalia,
     name: "Natalia Teglia",
@@ -49,3 +49,5 @@ export const boardInfo = [
     title: "Co-Social Media Manager",
   },
 ];
+
+export default boardInfo;
