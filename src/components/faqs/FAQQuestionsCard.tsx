@@ -17,8 +17,9 @@ const FAQQuestionsCard = ({ item }: { item: FAQQuestion }) => {
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
+      whileHover={{ backgroundColor: "#F9D354" }}
       viewport={{ once: true }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 0.3 }}
       className="bg-mocktrial-seablue text-mocktrial-blue border-mocktrial-blue mx-auto my-0.5 flex w-4/5 flex-col rounded-lg border-4 p-3 last:mb-20 md:w-2/3 md:border-5 md:last:mb-4 lg:border-6"
     >
       <AccordionItem value={`faq-${item.question}`}>
