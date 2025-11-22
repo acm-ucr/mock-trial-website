@@ -61,7 +61,13 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="text-mocktrial-blue border-mocktrial-blue bg-mocktrial-paleblue fixed bottom-8 left-1/2 z-50 flex w-11/12 max-w-md -translate-x-1/2 justify-around rounded-full border-4 py-3 md:hidden">
+      <motion.div
+        className="text-mocktrial-blue border-mocktrial-blue bg-mocktrial-paleblue fixed bottom-8 left-1/2 z-50 flex w-11/12 max-w-md -translate-x-1/2 justify-around rounded-full border-4 py-3 md:hidden"
+        initial={{ opacity: 0, y: 10 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
         <Link href="/" className="flex flex-col items-center">
           <LiaHomeSolid size={20} />
           <div className="mt-1 text-xs font-semibold">HOME</div>
@@ -90,7 +96,7 @@ const Navbar = () => {
           <BiLinkAlt size={20} />
           <div className="mt-1 text-xs font-semibold">CONNECT</div>
         </Link>
-      </div>
+      </motion.div>
     </>
   );
 };
