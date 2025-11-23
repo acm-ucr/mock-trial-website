@@ -13,11 +13,15 @@ const BoardCard: React.FC<BoardCardProps> = ({ image, name, title }) => {
         <Image
           src={image}
           alt="Picture of person"
-          className="mt-10 object-cover object-top"
+          className="mt-4 object-cover object-top sm:mt-6 md:mt-8 lg:mt-10"
         />
       </div>
-      <p className="mt-6 text-3xl font-bold">{name}</p>
-      <p className="mb-10 text-2xl">{title}</p>
+      <p className="mt-2 text-xl font-bold sm:text-2xl md:mt-4 lg:mt-6 lg:text-3xl">
+        {name}
+      </p>
+      <p className="mb-4 text-lg sm:text-xl md:mb-7 lg:mb-10 lg:text-2xl">
+        {title}
+      </p>
     </div>
   );
 };
