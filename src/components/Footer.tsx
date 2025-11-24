@@ -22,7 +22,6 @@ const Footer = () => {
               href="mailto:mocktrialucr@gmail.com"
               aria-label="Email"
               className="hover:text-mocktrial-yellow"
-              target="_blank"
             >
               <FaEnvelope className="h-10 w-10 md:h-8 md:w-8 lg:h-10 lg:w-10" />
             </Link>
