@@ -16,6 +16,13 @@ const NavAnimation = {
   whileHover: { scale: 1.05 },
 };
 
+const BottomBarAnimation = {
+  initial: { opacity: 0, y: 10 },
+  whileInView: { opacity: 1, y: 0 },
+  transition: { duration: 0.8 },
+  viewport: { once: true },
+};
+
 const Navbar = () => {
   const pathName = usePathname();
 
@@ -63,10 +70,7 @@ const Navbar = () => {
 
       <motion.div
         className="text-mocktrial-blue border-mocktrial-blue bg-mocktrial-paleblue fixed bottom-8 left-1/2 z-50 flex w-11/12 max-w-md -translate-x-1/2 justify-around rounded-full border-4 py-3 md:hidden"
-        initial={{ opacity: 0, y: 10 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
+        {...BottomBarAnimation}
       >
         <Link href="/" className="flex flex-col items-center">
           <LiaHomeSolid size={20} />
