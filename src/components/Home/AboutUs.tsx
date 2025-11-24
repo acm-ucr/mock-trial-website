@@ -37,16 +37,14 @@ const AboutUs = () => {
           To join, email
         </p>
 
-        <motion.div whileHover={{ scale: 1.05 }} className="inline-block">
           <Link href="mailto:mocktrialucr@gmail.com" aria-label="Email">
-            <div className="bg-mocktrial-yellow mb-25 inline-block rounded-full px-6 py-3.5 sm:px-8 sm:py-4 md:px-8 md:py-4 lg:px-10 lg:py-4.5">
+            <motion.div whileHover={{ scale: 1.05 }} className="inline-blaock bg-mocktrial-yellow mb-25 inline-block rounded-full px-6 py-3.5 sm:px-8 sm:py-4 md:px-8 md:py-4 lg:px-10 lg:py-4.5">
               <div className="text-sm font-semibold underline sm:text-base md:text-lg lg:text-xl">
                 mocktrialucr@gmail.com
               </div>
-            </div>
+            </motion.div>
           </Link>
         </motion.div>
-      </motion.div>
     </div>
   );
 };
