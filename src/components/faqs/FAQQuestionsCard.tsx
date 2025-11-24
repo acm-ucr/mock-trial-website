@@ -18,8 +18,7 @@ const FAQQuestionsCard = ({ item }: { item: FAQQuestion }) => {
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 1 }}
-      className="bg-mocktrial-seablue text-mocktrial-blue border-mocktrial-blue mx-auto my-0.5 flex w-4/5 flex-col rounded-lg border-4 p-3 last:mb-20 md:w-2/3 md:border-5 md:last:mb-4 lg:border-6"
+      className="bg-mocktrial-seablue hover:bg-mocktrial-lightyellow text-mocktrial-blue border-mocktrial-blue mx-auto my-0.5 flex w-4/5 flex-col rounded-lg border-4 p-3 last:mb-20 md:w-2/3 md:border-5 md:last:mb-4 lg:border-6"
     >
       <AccordionItem value={`faq-${item.question}`}>
         <AccordionTrigger className="flex w-full items-center py-1.5">
