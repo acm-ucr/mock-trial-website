@@ -11,7 +11,7 @@ const BoardCard: React.FC<BoardCardProps> = ({ image, name, title, scale }) => {
   return (
     <div className="text-mocktrial-darkblue text-center">
       <div className="relative h-80 w-80 sm:h-85 sm:w-85 md:h-90 md:w-90 lg:h-100 lg:w-100">
-        <div className="absolute inset-0 rounded-4xl bg-linear-to-t from-[#E7C67E] to-[#E1AF42]" />
+        <div className="from-mocktrial-lightyellow to-mocktrial-yellow absolute inset-0 rounded-4xl bg-linear-to-t" />
         <div className="absolute -top-44 mx-auto overflow-hidden sm:-top-46 md:-top-48 lg:-top-50">
           <Image
             src={image}
