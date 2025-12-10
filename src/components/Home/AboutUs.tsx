@@ -19,7 +19,7 @@ const AboutUs = () => {
     <div>
       <motion.div
         {...fadeInUp}
-        className="bg-mocktrial-yellow m-4 mx-auto w-xs rounded-3xl p-3 sm:w-sm md:w-md lg:w-lg"
+        className="bg-mocktrial-yellow m-4 mx-auto w-xs rounded-3xl p-3 sm:w-md md:w-lg lg:w-xl"
       >
         <p className="bg-mocktrial-blue font-mocktrial-montserrat sm:text-md rounded-2xl p-6 text-center text-sm font-semibold text-white md:text-lg lg:text-xl">
           Mock Trial is a competitive team based activity where students
@@ -40,7 +40,7 @@ const AboutUs = () => {
         <Link href="mailto:mocktrialucr@gmail.com" aria-label="Email">
           <motion.div
             whileHover={{ scale: 1.05 }}
-            className="inline-blaock bg-mocktrial-yellow mb-25 inline-block rounded-full px-6 py-3.5 sm:px-8 sm:py-4 md:px-8 md:py-4 lg:px-10 lg:py-4.5"
+            className="inline-blaock bg-mocktrial-yellow mb-10 inline-block rounded-full px-6 py-3.5 sm:px-8 sm:py-4 md:px-8 md:py-4 lg:px-10 lg:py-4.5"
           >
             <div className="text-sm font-semibold underline sm:text-base md:text-lg lg:text-xl">
               mocktrialucr@gmail.com
