@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 
 const Board = () => {
   return (
-    <div className="mt-20 mr-20 ml-20 grid grid-cols-1 justify-items-center text-center lg:grid-cols-2">
+    <div className="mt-35 mr-20 ml-20 grid grid-cols-1 justify-items-center gap-y-30 pb-26 text-center sm:mt-37 md:mt-40 md:pb-0 lg:mt-43 lg:grid-cols-2">
       {boardInfo.map((CARD, index) => (
         <div key={index}>
           <motion.div
@@ -20,6 +20,7 @@ const Board = () => {
               name={CARD.name}
               title={CARD.title}
               image={CARD.image}
+              scale={CARD.scale}
             />
           </motion.div>
 
@@ -35,6 +36,7 @@ const Board = () => {
               name={CARD.name}
               title={CARD.title}
               image={CARD.image}
+              scale={CARD.scale}
             />
           </motion.div>
         </div>
