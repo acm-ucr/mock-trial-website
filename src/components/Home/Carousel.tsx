@@ -96,7 +96,7 @@ const CarouselCSA = ({ photos }: CarouselProps) => {
           {photos.map((_, index) => (
             <button
               key={index}
-              className={`mx-1 h-5 w-5 rounded-full ${currIndex === index ? "bg-mocktrial-blue/90" : "bg-mocktrial-lightblue/50"}`}
+              className={`mx-1 h-5 w-5 rounded-full hover:cursor-pointer ${currIndex === index ? "bg-mocktrial-blue/90" : "bg-mocktrial-lightblue/50"}`}
               onClick={() => api?.scrollTo(index)}
             />
           ))}
