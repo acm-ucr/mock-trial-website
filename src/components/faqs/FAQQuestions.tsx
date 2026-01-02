@@ -1,21 +1,21 @@
+import { Accordion } from "@/components/Accordion";
+import Questions from "@/data/Questions";
 import FAQQuestionsCard from "@/components/faqs/FAQQuestionsCard";
 
-interface FAQQuestion {
-  question: string;
-  answer: string;
-}
-interface FAQProps {
-  faqData: FAQQuestion[];
-}
-
-const FAQQuestions = ({ faqData }: FAQProps) => {
+const FAQS = () => {
   return (
-    <div className="flex flex-col gap-6 py-8">
-      {faqData.map((q) => (
-        <FAQQuestionsCard item={q} />
-      ))}
+    <div className="bg-mocktrial-lightblue w-full py-8">
+      <Accordion
+        type="single"
+        collapsible
+        className="mx-auto flex w-full flex-col gap-6"
+      >
+        {Questions.map((item) => (
+          <FAQQuestionsCard key={item.question} item={item} />
+        ))}
+      </Accordion>
     </div>
   );
 };
 
-export default FAQQuestions;
+export default FAQS;

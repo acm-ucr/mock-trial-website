@@ -5,11 +5,11 @@ import carouselPhotos from "@/data/CarouselPictures";
 
 const Home = () => {
   return (
-    <div className="bg-mocktrial-lightblue">
+    <>
       <Carousel photos={carouselPhotos} />
       <Header title="About Us" />
       <AboutUs />
-    </div>
+    </>
   );
 };
 
