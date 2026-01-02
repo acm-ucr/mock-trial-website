@@ -5,7 +5,7 @@ import carouselPhotos from "@/data/CarouselPictures";
 
 const Home = () => {
   return (
-    <div className="bg-mocktrial-lightblue">
+    <div className="bg-mocktrial-lightblue min-h-screen">
       <Carousel photos={carouselPhotos} />
       <Header title="About Us" />
       <AboutUs />
