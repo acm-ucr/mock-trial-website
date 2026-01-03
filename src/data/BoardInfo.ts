@@ -7,7 +7,7 @@ import Praghya from "@/public/board/praghya_ramesh.webp";
 import Sri from "@/public/board/sri_vidya_charepalli.webp";
 import Tejal from "@/public/board/tejal_prabhu.webp";
 
-export const boardInfo = [
+const boardInfo = [
   {
     image: Natalia,
     name: "Natalia Teglia",
@@ -57,3 +57,5 @@ export const boardInfo = [
     scale: 1.1,
   },
 ];
+
+export default boardInfo;

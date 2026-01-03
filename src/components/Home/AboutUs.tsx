@@ -16,10 +16,10 @@ const fadeInUpDelayed = {
 
 const AboutUs = () => {
   return (
-    <div className="pb-20 md:pb-0">
+    <div className="bg-mocktrial-lightblue pt-4">
       <motion.div
         {...fadeInUp}
-        className="bg-mocktrial-yellow m-4 mx-auto w-xs rounded-3xl p-3 sm:w-md md:w-lg lg:w-xl"
+        className="bg-mocktrial-yellow mx-auto w-xs rounded-3xl p-3 sm:w-md md:w-lg lg:w-xl"
       >
         <p className="bg-mocktrial-blue font-mocktrial-montserrat sm:text-md rounded-2xl p-6 text-center text-sm font-semibold text-white md:text-lg lg:text-xl">
           Mock Trial is a competitive team based activity where students

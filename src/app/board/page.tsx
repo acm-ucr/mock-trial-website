@@ -3,10 +3,10 @@ import Board1 from "@/components/Board/Board";
 
 const Board = () => {
   return (
-    <div className="bg-mocktrial-lightblue">
-      <Header title="Board" />
+    <>
+      <Header>Board</Header>
       <Board1 />
-    </div>
+    </>
   );
 };
 
