@@ -4,7 +4,7 @@ import FAQS from "@/components/faqs/FAQQuestions";
 export default function Page() {
   return (
     <>
-      <Header title="Frequently Asked Questions" />
+      <Header>Frequently Asked Questions</Header>
       <FAQS />
     </>
   );

@@ -4,7 +4,7 @@ import AchievementsGrid from "@/components/achievements/AchievementsGrid";
 const Achievements = () => {
   return (
     <>
-      <Header title="Achievements" />
+      <Header>Achievements</Header>
       <AchievementsGrid />
     </>
   );
