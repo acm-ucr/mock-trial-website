@@ -1,6 +1,6 @@
 "use client";
 import BoardCard from "./BoardCard";
-import { boardInfo } from "@/data/boardinfos";
+import boardInfo from "@/data/boardinfos";
 import { motion } from "motion/react";
 
 const Board = () => {
