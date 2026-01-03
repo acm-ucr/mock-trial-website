@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <>
       <Carousel photos={carouselPhotos} />
-      <Header title="About Us" />
+      <Header>About Us</Header>
       <AboutUs />
     </>
   );
