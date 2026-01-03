@@ -18,7 +18,7 @@ const fadeInFromBottomOdd = {
 
 const AchievementsGrid = () => {
   return (
-    <div className="bg-mocktrial-lightblue relative grid grid-cols-1">
+    <div className="bg-mocktrial-lightblue relative grid grid-cols-1 overflow-hidden">
       <div className="mt-10 block md:hidden" />
       {AchievementsData.map(({ image, text }, index) => (
         <div key={index}>

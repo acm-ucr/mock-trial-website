@@ -16,7 +16,7 @@ const fadeInUpDelayed = {
 
 const AboutUs = () => {
   return (
-    <div>
+    <div className="pb-20 md:pb-0">
       <motion.div
         {...fadeInUp}
         className="bg-mocktrial-yellow m-4 mx-auto w-xs rounded-3xl p-3 sm:w-md md:w-lg lg:w-xl"
