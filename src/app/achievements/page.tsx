@@ -1,5 +1,5 @@
 import Header from "@/components/Header";
-import AchievementsGrid from "@/components/achievements/AchievementsGrid";
+import AchievementsGrid from "@/components/Achievements/AchievementsGrid";
 
 const Achievements = () => {
   return (

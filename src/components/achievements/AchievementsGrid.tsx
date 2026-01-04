@@ -1,8 +1,8 @@
 "use client";
-import LeftAchCard from "@/components/achievements/LeftAchCard";
-import RightAchCard from "@/components/achievements/RightAchCard";
-import LeftAchMobileCard from "@/components/achievements/LeftAchMobileCard";
-import RightAchMobileCard from "@/components/achievements/RightAchMobileCard";
+import LeftAchCard from "@/components/Achievements/LeftAchCard";
+import RightAchCard from "@/components/Achievements/RightAchCard";
+import LeftAchMobileCard from "@/components/Achievements/LeftAchMobileCard";
+import RightAchMobileCard from "@/components/Achievements/RightAchMobileCard";
 import AchievementsData from "@/data/AchievementsData";
 import { motion } from "motion/react";
 

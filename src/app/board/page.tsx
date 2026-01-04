@@ -1,5 +1,5 @@
 import Header from "@/components/Header";
-import Board1 from "@/components/board/Card";
+import Board1 from "@/components/Board/Card";
 
 const Board = () => {
   return (

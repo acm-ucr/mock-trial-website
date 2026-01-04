@@ -1,5 +1,5 @@
 import Header from "@/components/Header";
-import FAQS from "@/components/faqs/FAQQuestions";
+import FAQS from "@/components/Faqs/FAQQuestions";
 
 export default function Page() {
   return (

@@ -9,7 +9,7 @@ import {
   CarouselContent,
   CarouselItem,
   type CarouselApi,
-} from "@/components/ui/carousel";
+} from "@/components/Ui/carousel";
 
 interface Photo {
   src: StaticImageData;

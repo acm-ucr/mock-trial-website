@@ -1,6 +1,6 @@
 import { Accordion } from "@/components/Accordion";
 import Questions from "@/data/Questions";
-import FAQQuestionsCard from "@/components/faqs/FAQQuestionsCard";
+import FAQQuestionsCard from "@/components/Faqs/FAQQuestionsCard";
 
 const FAQS = () => {
   return (
