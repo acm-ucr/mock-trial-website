@@ -1,11 +1,11 @@
 import Header from "@/components/Header";
-import Board1 from "@/components/Board/Board";
+import Card from "@/components/board/Card";
 
 const Board = () => {
   return (
     <>
       <Header>Board</Header>
-      <Board1 />
+      <Card />
     </>
   );
 };

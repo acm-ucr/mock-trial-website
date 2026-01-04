@@ -1,13 +1,13 @@
 import Image, { StaticImageData } from "next/image";
 
-interface BoardCardProps {
+interface CardsProps {
   image: StaticImageData;
   name: string;
   title: string;
   scale: number;
 }
 
-const BoardCard: React.FC<BoardCardProps> = ({ image, name, title, scale }) => {
+const Cards: React.FC<CardsProps> = ({ image, name, title, scale }) => {
   return (
     <div className="text-mocktrial-darkblue text-center">
       <div className="relative h-80 w-80 sm:h-85 sm:w-85 md:h-90 md:w-90 lg:h-100 lg:w-100">
@@ -31,4 +31,4 @@ const BoardCard: React.FC<BoardCardProps> = ({ image, name, title, scale }) => {
   );
 };
 
-export default BoardCard;
+export default Cards;
